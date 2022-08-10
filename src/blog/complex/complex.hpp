@@ -12,7 +12,7 @@ class tuple_size<complex<T>> {
 template <size_t I, typename T>
 auto get(const complex<T>& c) {
     if constexpr (I == 0) return c.real();
-    return c.imag();
+    else return c.imag();
 }
 
 template <size_t I, typename T>
